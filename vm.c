@@ -3,7 +3,7 @@
 #include "stack.h"
 
 void vm_collect_garbage(vm_t *vm) {
-  // ?
+  
   if(vm == NULL)return;
   mark(vm);
   trace(vm);
@@ -11,7 +11,7 @@ void vm_collect_garbage(vm_t *vm) {
 }
 
 void sweep(vm_t *vm) {
-  // ?
+
   if(vm == NULL) return;
   for(int i = 0; i < vm->objects->count; i++){
     snek_object_t *obj = (snek_object_t *)(vm->objects->data[i]);
@@ -26,7 +26,6 @@ void sweep(vm_t *vm) {
   stack_remove_nulls(vm->objects);
 }
 
-// don't touch below this line
 
 void mark(vm_t *vm) {
   for (size_t i = 0; i < vm->frames->count; i++) {
@@ -57,7 +56,7 @@ void trace(vm_t *vm) {
     trace_blacken_object(gray_objects, stack_pop(gray_objects));
   }
 
-  // Clean up after ourselves :)
+  // Clean up memory
   stack_free(gray_objects);
 }
 
