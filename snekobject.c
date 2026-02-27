@@ -54,7 +54,7 @@ snek_object_t *snek_array_get(snek_object_t *array, size_t index) {
     return NULL;
   }
 
-  // Get the value directly now (already checked size constraint)
+ 
   return array->data.v_array.elements[index];
 }
 
