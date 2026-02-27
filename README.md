@@ -2,13 +2,13 @@
 
 This project implements a minimal virtual machine and a full mark-and-sweep garbage collector in C.
 
-=======
+
 It demonstrates low-level memory management, object graph traversal, and runtime system design.
 
 ---
 
 ## Features
->>>>>>> 016c62c (Restructure project into src/include/tests layout and improve README)
+
 
 - Custom object system
 - Frame-based root tracking
@@ -16,9 +16,8 @@ It demonstrates low-level memory management, object graph traversal, and runtime
 - Trace phase
 - Sweep phase
 
-=======
 - Supports:
->>>>>>> 016c62c (Restructure project into src/include/tests layout and improve README)
+
   - Integers
   - Strings
   - Arrays
