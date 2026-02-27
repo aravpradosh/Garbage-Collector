@@ -26,3 +26,8 @@ This project implements a minimal virtual machine and a full mark-and-sweep garb
 - Valgrind memory verification
 
 ## 🏗 Project Structure
+
+src/ → Core runtime implementation
+include/ → Header files
+tests/ → Munit test suite
+external/ → Third-party test library
