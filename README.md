@@ -1,34 +1,28 @@
-# Mark-and-Sweep Garbage Collector (C)
+# C Runtime with Mark-and-Sweep Garbage Collector
 
-A custom runtime system implementing:
+This project implements a minimal virtual machine and a full mark-and-sweep garbage collector in C.
 
+## ✨ Features
+
+- Custom object system
+- Frame-based root tracking
 - Mark phase
 - Trace phase
 - Sweep phase
-- Frame-based root tracking
-- Object graph traversal
-- Manual VM object tracking
-
-## Features
-
-- Custom VM structure
-- Reference stack per frame
-- Mark-and-sweep garbage collection
-- Support for:
+- Handles:
   - Integers
   - Strings
-  - Vectors
   - Arrays
+  - Vector3 objects
+- Cyclic reference handling
 
-## Concepts Demonstrated
+## 🧠 Concepts Demonstrated
 
 - Heap memory management
-- Graph traversal (DFS-style marking)
-- Handling cyclic references
-- Stack frame root tracking
-- Object lifetime management
+- Object graph traversal
+- Manual VM object tracking
+- Root set identification
+- Garbage collection lifecycle
+- Valgrind memory verification
 
-## Build
-
-```bash
-gcc src/*.c external/munit/munit.c -Iinclude -o tests
+## 🏗 Project Structure
