@@ -1,0 +1,12 @@
+{
+  "name": "CS50 Local Environment",
+  "image": "ubuntu:22.04",
+  "postCreateCommand": "apt update && apt install -y build-essential valgrind make git",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}

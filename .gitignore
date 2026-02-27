@@ -1,0 +1,5 @@
+gc_tests
+*.o
+*.exe
+*.out
+nul
