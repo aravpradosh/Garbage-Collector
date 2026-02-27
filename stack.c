@@ -51,7 +51,7 @@ void stack_remove_nulls(stack_t *stack) {
   // Update the count to reflect the new number of elements.
   stack->count = new_count;
 
-  // Optionally, you might want to zero out the remaining slots.
+ 
   for (size_t i = new_count; i < stack->capacity; ++i) {
     stack->data[i] = NULL;
   }
